@@ -1,0 +1,24 @@
+Package: ReptiliaBR
+Title: Checklists and Distribution Maps for Brazilian Reptiles
+Version: 0.4.0
+Authors@R: 
+    person("Omar M.", "Entiauspe-Neto", email = "entiauspe@usp.br",
+           role = c("aut", "cre"))
+Description: Provides a curated taxonomic checklist of Brazilian reptile
+    species (Testudines, Crocodylia, and Squamata) together with their
+    state-level (Unidade da Federacao) occurrence records. Includes
+    helper functions to filter and list species by taxonomic rank or by
+    state, and to draw static choropleth maps of species richness or of
+    a single taxon's distribution across the 27 Brazilian states.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.1
+Depends: R (>= 4.1)
+Imports: ggplot2, rlang, sf
+Suggests: shiny, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+LazyData: true
+NeedsCompilation: no
+Author: Omar M. Entiauspe-Neto [aut, cre]
+Maintainer: Omar M. Entiauspe-Neto <entiauspe@usp.br>
