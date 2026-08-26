@@ -1,9 +1,5 @@
 # ReptiliaBR
 **<h2>ReptiliaBR: an R/Shiny package for the checklist of Brazilian reptiles**
-Authored by Omar M. Entiauspe-Neto◑, Henrique C. Costa◑◑, and Thaís B. Guedes◑◑◑
-◑ Instituto Butantan, Laboratório de Coleções Zoológicas, 05503-90, São Paulo, SP, Brazil. 
-◑◑ Universidade Federal de Juiz de Fora, Instituto de Ciências Biológicas, Departamento de Zoologia, Campus Universitário, 36036-900, Juiz de Fora, MG, Brazil.
-◑◑◑ Instituto de Biociências, Departamento de Biodiversidade, Universidade Estadual Paulista “Júlio de Mesquita Filho”, Rio Claro, São Paulo, 13506-900, Brazil.
 
 # RUNNING ReptiliaBR
 ReptiliaBR is implemented in R language. It imports "ggplot2", "rlang", and "sf". For tutorial use, see  the ["Guide" folder here](https://github.com/omarentiauspe/ReptiliaBR/tree/main/Guide).
@@ -31,5 +27,9 @@ Suggests: shiny, testthat (>= 3.0.0)
 Config/testthat/edition: 3
 LazyData: true
 NeedsCompilation: no
-Author: Omar M. Entiauspe-Neto [aut, cre]
 Maintainer: Omar M. Entiauspe-Neto <entiauspe@usp.br>
+
+Authored by Omar M. Entiauspe-Neto◑, Henrique C. Costa◑◑, and Thaís B. Guedes◑◑◑
+◑ Instituto Butantan, Laboratório de Coleções Zoológicas, 05503-90, São Paulo, SP, Brazil. 
+◑◑ Universidade Federal de Juiz de Fora, Instituto de Ciências Biológicas, Departamento de Zoologia, Campus Universitário, 36036-900, Juiz de Fora, MG, Brazil.
+◑◑◑ Instituto de Biociências, Departamento de Biodiversidade, Universidade Estadual Paulista “Júlio de Mesquita Filho”, Rio Claro, São Paulo, 13506-900, Brazil.
