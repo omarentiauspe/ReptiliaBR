@@ -4,6 +4,11 @@ Checklists and static distribution maps for Brazilian reptiles (Testudines,
 Crocodylia, and Squamata), based on a curated taxonomic checklist with
 state-level (Unidade da Federacao / UF) occurrence records. 
 
+# Citation: 
+
+ReptiliaBR: an R/Shiny package for the checklist of Brazilian reptiles. Entiauspe-Neto, O.M., Costa, H.C., Guedes, T.B. 
+Under Review. 
+
 ## Installation
 #### Option 1: Using `remotes` (Recommended)
 
