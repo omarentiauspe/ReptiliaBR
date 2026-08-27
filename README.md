@@ -5,6 +5,32 @@ Crocodylia, and Squamata), based on a curated taxonomic checklist with
 state-level (Unidade da Federacao / UF) occurrence records.
 
 ## Installation
+#### Option 1: Using `remotes` (Recommended)
+
+```r
+# Install remotes if you haven't already
+if (!requireNamespace("remotes", quietly = TRUE)) {
+  install.packages("remotes")
+}
+
+# Install ReptiliaBR from GitHub
+remotes::install_github("omarentiauspe/ReptiliaBR", subdir = "ReptiliaBR")
+```
+
+#### Option 2: Using `devtools` 
+```r
+# Install devtools if you haven't already
+if (!requireNamespace("devtools", quietly = TRUE)) {
+  install.packages("devtools")
+}
+
+# Install ReptiliaBR from GitHub
+devtools::install_github("omarentiauspe/ReptiliaBR", subdir = "ReptiliaBR")
+```
+
+#### Option 3: Manual installation 
+
+You can install `ReptiliaBR` in your own working directory, by downloading the source file and installing it as below:
 
 ```r
 install.packages("ReptiliaBR_0.4.0.tar.gz", repos = NULL, type = "source")
