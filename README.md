@@ -2,7 +2,7 @@
 
 Checklists and static distribution maps for Brazilian reptiles (Testudines,
 Crocodylia, and Squamata), based on a curated taxonomic checklist with
-state-level (Unidade da Federacao / UF) occurrence records.
+state-level (Unidade da Federacao / UF) occurrence records. 
 
 ## Installation
 #### Option 1: Using `remotes` (Recommended)
@@ -114,6 +114,9 @@ readability.
 ```r
 library(ReptiliaBR)
 
+# Launch the interactive Shiny app
+run_app()
+
 # All vipers
 list_taxa("family", "Viperidae")
 
@@ -149,8 +152,6 @@ list_flagged("contested", taxon = "Bothrops")
 # All doubtful or contested records in Rio de Janeiro
 list_flagged(states = "RJ")
 
-# Launch the interactive Shiny app
-run_app()
 ```
 
 ## Data sources
