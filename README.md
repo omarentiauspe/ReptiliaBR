@@ -167,21 +167,6 @@ list_flagged(states = "RJ")
 - State boundaries: simplified from `giuliano-macedo/geodata-br-states`
   (CC0 / public domain), reprojected to EPSG:4326.
 
-## Notes
+## Updates since last release [2026]
 
-- Endemism (`endemic_br`) marks taxa endemic to Brazil, as coded in the
-  source checklist ("End" column).
-- State occurrence columns are `TRUE` (confirmed, "X" in the source
-  checklist), `FALSE` (no record, blank), or `NA` (flagged "?" doubtful
-  or "!" contested in the source checklist). The flag itself isn't
-  discarded — it's kept in `lista_repteis_flags` and queryable with
-  `list_flagged()`.
-- The `data-raw/` scripts can be re-run on an updated spreadsheet (same
-  column layout) to refresh the bundled `lista_repteis` and
-  `lista_repteis_flags` data.
-- `data-raw/edit_checklist.R` provides maintainer-only helpers (not part
-  of the package API, not used by the app) for renaming a species, adding
-  a species, or changing a state occurrence record directly in
-  `lista_repteis_raw.csv`, each change automatically logged to
-  `data-raw/changelog/CHANGELOG_<version>.md`. See
-  `data-raw/example_edit_checklist.R` for a runnable example.
+- "Lespoternon" has been changed to "Leposternon". 
