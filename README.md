@@ -162,8 +162,8 @@ list_flagged(states = "RJ")
 
 ## Data sources
 
-- Taxonomy and state occurrence: curated checklist supplied by the package
-  maintainer.
+-  Costa, H. C., Guedes, T. B., & Entiauspe-Neto, O. M. (2026). Updated checklist of Brazilian Reptiles: 
+celebrating twenty years of knowledge. Herpetologia Brasileira, 15(2).
 - State boundaries: simplified from `giuliano-macedo/geodata-br-states`
   (CC0 / public domain), reprojected to EPSG:4326.
 
