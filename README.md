@@ -1,5 +1,6 @@
 # ReptiliaBR
 
+The Brazilian list of Reptiles, now available in R format.
 Checklists and static distribution maps for Brazilian reptiles (Testudines,
 Crocodylia, and Squamata), based on a curated taxonomic checklist with
 state-level (Unidade da Federacao / UF) occurrence records. 
