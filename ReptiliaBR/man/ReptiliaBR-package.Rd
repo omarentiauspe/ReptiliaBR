@@ -8,9 +8,9 @@
 \description{
 Tools to explore a taxonomic checklist of Brazilian reptiles and their
 occurrence across the 27 Brazilian states (Unidades da Federacao, UFs).
-The package bundles three datasets, \link{lista_repteis}, \link{lista_repteis_flags},
-and \link{br_states}, and a set of functions to filter, list, and map species
-occurrence.
+The package bundles four datasets, \link{lista_repteis}, \link{lista_repteis_flags},
+\link{lista_repteis_threat}, and \link{br_states}, and a set of functions to
+filter, list, and map species occurrence.
 }
 \section{Main functions}{
 
@@ -20,6 +20,7 @@ occurrence.
 \item \code{\link[=states_by_taxon]{states_by_taxon()}} - states where a given taxon occurs
 \item \code{\link[=search_species]{search_species()}} - free-text search across taxon names
 \item \code{\link[=list_flagged]{list_flagged()}} - doubtful or contested occurrence records
+\item \code{\link[=list_threatened]{list_threatened()}} - taxa in the national list of threatened species
 \item \code{\link[=map_taxon]{map_taxon()}} - map where a taxon (species, genus, family, ...) occurs
 \item \code{\link[=map_richness]{map_richness()}} - choropleth of species richness per state
 }

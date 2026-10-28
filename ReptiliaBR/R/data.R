@@ -53,6 +53,38 @@
 #' @source Compiled checklist supplied by the package maintainer.
 "lista_repteis_flags"
 
+#' National threat status of Brazilian reptiles
+#'
+#' A companion to [lista_repteis] with the taxa listed as threatened in the
+#' official list of threatened Brazilian fauna, "Lista Nacional Oficial das
+#' Especies da Fauna Ameacadas de Extincao" (Annex I of Portaria MMA n.
+#' 1.704, of 16 June 2026, which replaced the list in Portaria MMA n.
+#' 148/2022). Taxa not in this table are not listed as threatened. Names
+#' follow [lista_repteis]: when the Portaria uses a different spelling or a
+#' synonym, the original name is kept in `name_in_source`. The full
+#' correspondence, with notes on every name that did not match directly,
+#' is in `data-raw/status_ameaca_portaria1704.csv`. Query it with
+#' [list_threatened()].
+#'
+#' @format A data frame with 123 rows and 6 columns:
+#' \describe{
+#'   \item{taxon}{Binomial or trinomial name, as in [lista_repteis].}
+#'   \item{family}{Taxonomic family, as in [lista_repteis].}
+#'   \item{category}{National risk category: `"VU"` (Vulnerable), `"EN"`
+#'     (Endangered), `"CR"` (Critically Endangered), or `"CR (PE)"`
+#'     (Critically Endangered, Possibly Extinct).}
+#'   \item{new_in_list}{Logical. `TRUE` when the taxon was not on the
+#'     previous list (Portaria MMA n. 148/2022), as marked with `"*"` in
+#'     the Portaria.}
+#'   \item{name_in_source}{Name as printed in the Portaria.}
+#'   \item{source}{The legal act, `"Portaria MMA 1.704/2026"`.}
+#' }
+#'
+#' @source Portaria MMA n. 1.704, de 16 de junho de 2026. Diario Oficial da
+#'   Uniao, 17 June 2026, edition 111-B, section 1 (extra B), p. 15.
+#'   <https://www.in.gov.br/web/dou/-/portaria-mma-n-1.704-de-16-de-junho-de-2026-712968917>
+"lista_repteis_threat"
+
 #' Simplified polygons of the 27 Brazilian states
 #'
 #' A simple feature (`sf`) polygon layer with one row per Brazilian state
