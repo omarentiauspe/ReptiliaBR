@@ -71,3 +71,24 @@ test_that("search_species finds partial matches case-insensitively", {
   expect_true(all(grepl("jarara", out$taxon, ignore.case = TRUE)))
   expect_gt(nrow(out), 0)
 })
+
+test_that("search_species returns no rows when nothing matches", {
+  out <- search_species("no such reptile")
+  expect_equal(nrow(out), 0)
+})
+
+test_that("states_by_taxon returns an empty vector for unknown taxa", {
+  expect_identical(states_by_taxon("taxon", "No such reptile"), character(0))
+})
+
+test_that("states_by_taxon follows the package's state order", {
+  st <- states_by_taxon("family", "Viperidae")
+  expect_equal(st, br_state_codes()[br_state_codes() %in% st])
+})
+
+test_that("list_by_state can be restricted to a taxon", {
+  out <- list_by_state("SP", rank = "family", value = "Viperidae")
+  expect_gt(nrow(out), 0)
+  expect_true(all(out$family == "Viperidae"))
+  expect_error(list_by_state("SP", rank = "nonsense", value = "x"))
+})

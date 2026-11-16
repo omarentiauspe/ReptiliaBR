@@ -44,6 +44,9 @@ Requires: `ggplot2`, `sf`, `rlang` (installed automatically as dependencies).
 - `lista_repteis` — data frame, 911 species x taxonomy + 27 state occurrence columns
 - `lista_repteis_flags` — long-format table of occurrence records flagged
   as doubtful ("?") or contested ("!") in the source checklist
+- `lista_repteis_threat` — national threat status (VU, EN, CR) of the
+  taxa listed in the official Brazilian list of threatened fauna
+  (Portaria MMA n. 1.704/2026)
 - `br_states` — `sf` polygon layer of the 27 Brazilian states
 
 ### Listing functions
@@ -61,6 +64,8 @@ Requires: `ggplot2`, `sf`, `rlang` (installed automatically as dependencies).
 - `search_species(pattern)` — free-text search across all name columns
 - `list_flagged(status, states, taxon)` — doubtful or contested occurrence
   records, filterable by status, state, or taxon
+- `list_threatened(category, states, taxon)` — taxa in the national list
+  of threatened species, filterable by risk category, state, or taxon
 
 ### Mapping functions
 - `map_taxon(rank, value)` — static choropleth showing which states a
@@ -150,6 +155,12 @@ list_flagged("contested", taxon = "Bothrops")
 # All doubtful or contested records in Rio de Janeiro
 list_flagged(states = "RJ")
 
+# Critically endangered reptiles (Portaria MMA n. 1.704/2026)
+list_threatened("CR")
+
+# Threatened species recorded in Bahia
+list_threatened(states = "BA")
+
 # Launch the interactive Shiny app
 run_app()
 ```
@@ -160,6 +171,11 @@ run_app()
   maintainer.
 - State boundaries: simplified from `giuliano-macedo/geodata-br-states`
   (CC0 / public domain), reprojected to EPSG:4326.
+- National threat status: Portaria MMA n. 1.704, de 16 de junho de 2026
+  (Diario Oficial da Uniao, 2026-06-17), Annex I,
+  <https://www.in.gov.br/web/dou/-/portaria-mma-n-1.704-de-16-de-junho-de-2026-712968917>.
+  Names in the Portaria were matched to the checklist; the correspondence
+  is in `data-raw/status_ameaca_portaria1704.csv`.
 
 ## Notes
 
